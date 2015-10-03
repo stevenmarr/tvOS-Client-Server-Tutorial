@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
             
             let appControllerContext = TVApplicationControllerContext()
             
-            let javascriptURL = NSURL(string: "Enter path to your JavaScript file here")
+            let javascriptURL = NSURL(string: "server.js")
             
             appControllerContext.javaScriptApplicationURL = javascriptURL!
             if let options = launchOptions {
