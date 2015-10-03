@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import TVMLKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDelegate {
 
     var window: UIWindow?
+    var appController: TVApplicationController?
 
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication, didFinishLaunchingWithOptions
+        launchOptions: [NSObject: AnyObject]?) -> Bool {
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            
+            let appControllerContext = TVApplicationControllerContext()
+            
+            let javascriptURL = NSURL(string: "Enter path to your JavaScript file here")
+            
+            appControllerContext.javaScriptApplicationURL = javascriptURL!
+            if let options = launchOptions {
+                for (kind, value) in options {
+                    if let kindStr = kind as? String {
+                        appControllerContext.launchOptions[kindStr] = value
+                    }
+                }
+            }
+            
+            self.appController = TVApplicationController(context:
+                appControllerContext, window: self.window, delegate: self)
         // Override point for customization after application launch.
         return true
     }
