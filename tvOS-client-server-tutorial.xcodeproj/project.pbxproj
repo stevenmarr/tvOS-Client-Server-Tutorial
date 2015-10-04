@@ -13,6 +13,8 @@
 		8057FC031BC062D50001EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8057FC021BC062D50001EF61 /* Assets.xcassets */; };
 		8057FC0E1BC062D50001EF61 /* tvOS_client_server_tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057FC0D1BC062D50001EF61 /* tvOS_client_server_tutorialTests.swift */; };
 		8057FC191BC062D50001EF61 /* tvOS_client_server_tutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057FC181BC062D50001EF61 /* tvOS_client_server_tutorialUITests.swift */; };
+		8057FC271BC06B460001EF61 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 8057FC261BC06B460001EF61 /* main.js */; };
+		8057FC291BC074FA0001EF61 /* hello.tvml in Resources */ = {isa = PBXBuildFile; fileRef = 8057FC281BC074FA0001EF61 /* hello.tvml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		8057FC141BC062D50001EF61 /* tvOS-client-server-tutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-client-server-tutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8057FC181BC062D50001EF61 /* tvOS_client_server_tutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS_client_server_tutorialUITests.swift; sourceTree = "<group>"; };
 		8057FC1A1BC062D50001EF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8057FC261BC06B460001EF61 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = SOURCE_ROOT; };
+		8057FC281BC074FA0001EF61 /* hello.tvml */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = hello.tvml; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 		8057FBEF1BC062D50001EF61 = {
 			isa = PBXGroup;
 			children = (
+				8057FC281BC074FA0001EF61 /* hello.tvml */,
+				8057FC261BC06B460001EF61 /* main.js */,
 				8057FBFA1BC062D50001EF61 /* tvOS-client-server-tutorial */,
 				8057FC0C1BC062D50001EF61 /* tvOS-client-server-tutorialTests */,
 				8057FC171BC062D50001EF61 /* tvOS-client-server-tutorialUITests */,
@@ -225,7 +231,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8057FC291BC074FA0001EF61 /* hello.tvml in Resources */,
 				8057FC031BC062D50001EF61 /* Assets.xcassets in Resources */,
+				8057FC271BC06B460001EF61 /* main.js in Resources */,
 				8057FC011BC062D50001EF61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +479,7 @@
 				8057FC1F1BC062D50001EF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8057FC201BC062D50001EF61 /* Build configuration list for PBXNativeTarget "tvOS-client-server-tutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +488,7 @@
 				8057FC221BC062D50001EF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8057FC231BC062D50001EF61 /* Build configuration list for PBXNativeTarget "tvOS-client-server-tutorialUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +497,7 @@
 				8057FC251BC062D50001EF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,9 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
             
             let appControllerContext = TVApplicationControllerContext()
             
-            let javascriptURL = NSURL(string: "server.js")
+            let jsFilePath = NSURL(string: "http://localhost:8000/main.js")
+            let javascriptURL = jsFilePath!
             
-            appControllerContext.javaScriptApplicationURL = javascriptURL!
+            appControllerContext.javaScriptApplicationURL = javascriptURL
             if let options = launchOptions {
                 for (kind, value) in options {
                     if let kindStr = kind as? String {

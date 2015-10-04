@@ -1,4 +1,5 @@
 function getDocument(url) {
+    //var url = 'http://www.google.com'
     var templateXHR = new XMLHttpRequest();
     templateXHR.responseType = "document";
     templateXHR.addEventListener("load", function() {pushDoc(templateXHR.responseXML);}, false);
@@ -12,7 +13,7 @@ function pushDoc(document) {
 }
 
 App.onLaunch = function(options) {
-    var templateURL = 'tvml-server.tvml';
+    var templateURL = 'http://localhost:8000/hello.tvml';
     getDocument(templateURL);
 }
 
